@@ -1,0 +1,25 @@
+Mini Strike - license for the game, the server and the tools in this download
+
+Copyright (c) 2026 the Mini Strike team. All rights reserved.
+
+You may, free of charge:
+  - download, install and play the game;
+  - run the dedicated server (ministrike_server) and the bot (ministrike_bot), also for other people, on your own
+    computers or servers, and change their settings (server.cfg);
+  - share links to the official downloads (https://github.com/brunoascic/ministrike-release).
+
+You may not:
+  - sell the game or the server, or charge for access to them, without written permission;
+  - modify, decompile, disassemble or reverse engineer the programs, except where the law allows it regardless
+    of this license;
+  - redistribute changed versions of the programs, or the programs under another name;
+  - use the programs to cheat, or to disturb other players or servers (for example by flooding them).
+
+Accounts: a Mini Strike account belongs to the Mini Strike team's account service. Accounts can be suspended or
+banned on every server for cheating or abuse.
+
+The software is provided "as is", without warranty of any kind. The Mini Strike team is not liable for any damage
+arising from its use, to the extent the law allows.
+
+Parts of the download are by other people and come under their own licenses (they apply to those parts only):
+see THIRD-PARTY-NOTICES.md.
