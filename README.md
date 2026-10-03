@@ -83,6 +83,9 @@ game fetches a ticket from the official server for it), you never type your pass
 - **Create account:** pick a name (3-15 letters, digits, `_`, `-`, `.`) and a password (6 characters or more).
 - **Log in** with an existing account. With **Remember me** the game logs you in by itself next time (it keeps a
   login token, not the password).
+- After the login comes the **server list**: the official server first, then public community servers, servers in
+  your network and the ones you used before. Double-click one and its rooms come up, no second login.
+  **Servers** (in the rooms) goes back to the list, **Back** in the list to the main menu.
 - Joining a server without being logged in (e.g. from a link) shows the login first and then joins that server.
 - **Play offline / LAN** skips the login. LAN games and the settings work without an account; online, everybody
   plays with their account (no guests).
@@ -102,7 +105,7 @@ line in the file and connect again.
 
 | Button | What it does |
 |---|---|
-| **Play online** | the rooms on your server |
+| **Play online** | the server list (official and community servers), then the rooms of the one you pick |
 | **LAN game** | host or join a game on your local network (logs you out of the server while you play) |
 | **Skins & cases** | your skins; open cases with the coins you earn |
 | **Profile** | your stats: kills, deaths, K/D, headshots, wins, time played... |
@@ -113,8 +116,8 @@ Clicking your name in the top left also opens the profile.
 
 ## Rooms
 
-**Play online** lists the rooms on the server. Double-click one to join; rooms with a padlock ask for the
-password. **Create room** lets you pick:
+Pick a server in the server list and its rooms come up. Double-click one to join; rooms with a padlock ask for the
+password. **Servers** goes back to the server list. **Create room** lets you pick:
 
 - name and optional password
 - map, mode (elimination, duel, competitive, deathmatch, team deathmatch), max players (2-10), weather
@@ -177,7 +180,7 @@ networks**. Everybody plays as a guest, nothing is saved. When the host leaves, 
 | Tab | scoreboard |
 | T or Enter | chat (`/help` for commands) |
 | M | switch team |
-| Esc | menu (resume, loadout, team, settings, leave room, main menu) |
+| Esc | menu (resume, loadout, team, settings, leave room, server list) |
 | F11 or Alt+Enter | window ↔ fullscreen (the mode chosen under Settings → Video) |
 | F8 | net graph (F5/F6 simulate lag and packet loss, F7 shows hitboxes) |
 | F1, ~ or ^ | [console](#console) |
