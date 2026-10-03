@@ -171,12 +171,13 @@ networks**. Everybody plays as a guest, nothing is saved. When the host leaves, 
 | Space | jump (crouch in the air to jump higher) |
 | Left mouse | fire · knife slash · throw grenade |
 | Right mouse | AWP scope (2 levels) · knife stab · lob grenade |
-| 1 / 2 / 3 / 4 or G | primary / secondary / knife / grenade |
+| 1 / 2 / 3 / 4 | primary / secondary / knife / grenade (4 again: your other grenade) |
 | Q, mouse wheel | last weapon, cycle weapons |
 | R | reload |
 | F | inspect the weapon (turns it to show the skin; firing, reloading or switching stops it) |
-| E (hold) | bomb defusal: plant the bomb on a site, defuse it |
-| B | loadout (pick weapons and grenade) |
+| G | drop the weapon (or grenade) in your hand |
+| E | pick up the weapon you look at (swaps it for yours) · bomb defusal: hold to plant / defuse |
+| B | loadout (pick weapons and grenades) |
 | Tab | scoreboard |
 | T or Enter | chat (`/help` for commands) |
 | M | switch team |
@@ -289,9 +290,15 @@ you reach ledges that a normal jump doesn't.
 Bullets reach across every map; the damage falls off with distance (a little for rifles and the AWP, a lot for the
 pistols, the MP9 and especially the Nova, whose pellets only scratch from far away).
 
-Choose your weapons and grenade (HE, flashbang, smoke, molotov or none) in the **loadout** menu (B). Changes apply at once during
-freeze time or right after spawning, otherwise on the next spawn. You get one grenade per round (per life in
-deathmatch). Left mouse throws it, right mouse lobs it underhand; grenades carry your movement, bounce off walls
+Choose your weapons and up to **two grenades of different kinds** (HE, flashbang, smoke, molotov) in the **loadout**
+menu (B). Changes apply at once during freeze time or right after spawning, otherwise on the next spawn. You get them
+once per round (per life in deathmatch); 4 takes the first one out, 4 again switches to the other.
+
+**Dropping and picking up:** G drops the weapon or grenade in your hand, a dead player drops their best gun and their
+grenades. Walk over a weapon to take it when that slot is free (a grenade when you have room for it); look at it and
+press E to swap it for the one you carry. In Competitive what you pick up is yours like what you bought (you keep it
+while you survive), so you can drop a rifle for a teammate. Rounds start with a clean floor; in deathmatch weapons
+disappear after 25 s. Not in gun game and with the weapon modifiers. Left mouse throws it, right mouse lobs it underhand; grenades carry your movement, bounce off walls
 and roll. A flashbang blinds you for the full time if you look straight at it, only briefly if you turn away, and
 not at all behind a wall. A smoke puts out the fires it covers, and a molotov thrown into a smoke goes out at once;
 inside a cloud the screen turns grey.
@@ -343,7 +350,8 @@ Collision still uses simple boxes, so the maps play exactly like before.
 
   You keep what you bought (and what's left of your armor) as long as you survive; whoever dies starts the next
   round with the USP-S only. Armor you kept costs only what's missing: a vest with 95 points left is topped up for
-  $40, the helmet on top of a full vest costs $350. Buying something else for the same slot in the same buy time gives the money back. The
+  $40, the helmet on top of a full vest costs $350. Buying something else for the same slot in the same buy time gives the money back, and what you
+  bought in this buy time can be sold again for its price: right click it in the buy menu (or its SELL button). The
   warmup has $16000 to try everything.
 
 **Armor** (every mode), like in CS: the **Kevlar vest** (100 armor points) makes hits on the chest and stomach weaker,
@@ -370,6 +378,9 @@ The HUD shows what's left next to your health.
   needs one). Whoever is killed with a knife goes down one level. The first knife kill on the last level wins the
   match; when the time runs out, the highest level wins. No grenades, no loadout, the weapon modifiers don't apply.
   The HUD shows the level, the kills on it and the next weapon, the scoreboard everybody's level.
+
+In every mode the game goes on for a moment after the deciding kill (or the bomb), like in CS: 2.5 seconds before
+the round ends, 3 seconds before the winner of the match is shown.
 
 Teams are balanced automatically; switch with M, the Esc menu or `/team`.
 
