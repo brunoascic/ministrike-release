@@ -274,10 +274,10 @@ you reach ledges that a normal jump doesn't.
 | Slot | Weapon | Damage | RPM | Mag | Notes |
 |---|---|---|---|---|---|
 | 1 | AK-47 | 36 | 600 | 30/90 | one-tap headshot, hard spray |
-| 1 | M4A4 | 33 | 666 | 30/90 | easier spray, faster |
+| 1 | M4A4 | 30 | 666 | 30/90 | easier spray, faster |
 | 1 | AWP | 115 | 41 | 5/30 | 2 zoom levels, one shot to the body, very inaccurate unscoped |
 | 1 | MP9 | 26 | 857 | 30/120 | accurate while moving |
-| 1 | Nova | 9 x 26 | 68 | 8/32 | shotgun, short range |
+| 1 | Nova | 9 x 26 | 68 | 8/32 | shotgun, short range: deadly within ~6 m, weak past 10 m, pellets do x2 to the head |
 | 2 | USP-S | 35 | 352 | 12/24 | precise pistol |
 | 2 | Desert Eagle | 53 | 266 | 7/35 | one-tap headshot, big recoil |
 | 3 | Knife | 40 / 65 | – | – | slash / stab; **backstab** 90 / 180; fastest movement |
@@ -285,6 +285,9 @@ you reach ledges that a normal jump doesn't.
 | 4 | Flashbang | – | – | 1 | blinds everyone who sees it (you and your team too) for up to 4.5 s |
 | 4 | Smoke | – | – | 1 | a cloud of 4.2 m radius for 16 s once it lies still: nobody sees through, bots neither |
 | 4 | Molotov | 32 / s | – | 1 | breaks where it lands: fire on the floor, 3 m radius for 7 s; armor doesn't help |
+
+Bullets reach across every map; the damage falls off with distance (a little for rifles and the AWP, a lot for the
+pistols, the MP9 and especially the Nova, whose pellets only scratch from far away).
 
 Choose your weapons and grenade (HE, flashbang, smoke, molotov or none) in the **loadout** menu (B). Changes apply at once during
 freeze time or right after spawning, otherwise on the next spawn. You get one grenade per round (per life in
@@ -336,17 +339,20 @@ Collision still uses simple boxes, so the maps play exactly like before.
   | Nova | $1050 | | AWP | $4750 |
   | MP9 | $1250 | | HE grenade / flashbang | $300 / $200 |
   | | | | Smoke / molotov | $300 / $400 |
-  | Armor | $650 | | | |
+  | Kevlar vest | $650 | | Vest + helmet | $1000 |
 
   You keep what you bought (and what's left of your armor) as long as you survive; whoever dies starts the next
-  round with the USP-S only. Buying something else for the same slot in the same buy time gives the money back. The
+  round with the USP-S only. Armor you kept costs only what's missing: a vest with 95 points left is topped up for
+  $40, the helmet on top of a full vest costs $350. Buying something else for the same slot in the same buy time gives the money back. The
   warmup has $16000 to try everything.
 
-**Armor** (every mode): 100 armor points that make hits on the body weaker; how much gets through depends on the
-weapon (AK-47 78 %, M4A4 70 %, USP-S 50 %...), and the armor loses half of what it blocks. Heads are never protected
-and the AWP goes straight through, so the AK-47, the Desert Eagle and the AWP still kill with one shot like before. In
-Competitive it costs $650, in all other modes it is free and you switch it on or off in the loadout (B), on by
-default. The HUD shows what's left next to your health.
+**Armor** (every mode), like in CS: the **Kevlar vest** (100 armor points) makes hits on the chest and stomach weaker,
+the **helmet** protects the head as well; legs are never protected. How much gets through depends on the weapon
+(AK-47 78 %, M4A4 70 %, USP-S 50 %...), and the armor loses half of what it blocks. With a helmet, a headshot from
+the MP9 or a pistol no longer kills (the USP-S does 70 instead of 140); the AK-47, the M4A4 (its headshots go through
+the helmet) and the Desert Eagle still one-tap, and the AWP goes straight through any armor. In Competitive you buy it
+(above); in all other modes it is free and you choose vest, vest + helmet (the default) or nothing in the loadout (B).
+The HUD shows what's left next to your health.
 
 ![Competitive: the buy menu](docs/screenshots/buy_menu.png)
 
