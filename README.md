@@ -292,16 +292,19 @@ pistols, the MP9 and especially the Nova, whose pellets only scratch from far aw
 
 Choose your weapons and up to **two grenades of different kinds** (HE, flashbang, smoke, molotov) in the **loadout**
 menu (B). Changes apply at once during freeze time or right after spawning, otherwise on the next spawn. You get them
-once per round (per life in deathmatch); 4 takes the first one out, 4 again switches to the other.
+once per round (per life in deathmatch); 4 takes the first one out, 4 again (or the mouse wheel) switches to the other.
+Left mouse throws it, right mouse lobs it underhand; grenades carry your movement, bounce off walls and roll. A
+flashbang blinds you for the full time if you look straight at it, only briefly if you turn away, and not at all
+behind a wall; it works across the whole map (full strength up to 12 m, weaker further away). A smoke puts out the
+fires it covers, and a molotov thrown into a smoke goes out at once; inside a cloud the screen turns grey.
 
 **Dropping and picking up:** G drops the weapon or grenade in your hand, a dead player drops their best gun and their
-grenades. Walk over a weapon to take it when that slot is free (a grenade when you have room for it); look at it and
-press E to swap it for the one you carry. In Competitive what you pick up is yours like what you bought (you keep it
-while you survive), so you can drop a rifle for a teammate. Rounds start with a clean floor; in deathmatch weapons
-disappear after 25 s. Not in gun game and with the weapon modifiers. Left mouse throws it, right mouse lobs it underhand; grenades carry your movement, bounce off walls
-and roll. A flashbang blinds you for the full time if you look straight at it, only briefly if you turn away, and
-not at all behind a wall. A smoke puts out the fires it covers, and a molotov thrown into a smoke goes out at once;
-inside a cloud the screen turns grey.
+grenades. Weapons keep their skin: whoever picks one up carries it with the skin it had. Walk over a weapon to take
+it when that slot is free (a grenade when you have room for it); look at it and press E to swap it for the one you
+carry. In the round modes you keep what you carry while you survive, bought or picked up, skin included; outside
+Competitive a picked-up weapon also becomes your loadout (the loadout menu shows it). In Competitive picked-up
+weapons can't be sold, and you can drop a rifle for a teammate. Rounds start with a clean floor; in deathmatch
+weapons disappear after 25 s. Not in gun game and with the weapon modifiers.
 
 ## Maps
 
