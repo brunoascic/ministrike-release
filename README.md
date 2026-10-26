@@ -72,7 +72,12 @@ menu comes up as usual (logging in continues in the background). Any key or mous
 Switch it off in the settings (*Intro at start*). It doesn't play when the game is started with command
 line options.
 
-The video is embedded in `MiniStrike.exe`, so no extra file has to be shipped. The intro has no sound.
+The video is embedded in `MiniStrike.exe`, so no extra file has to be shipped. The intro video itself has no sound;
+the start music plays when the game starts (also with the intro switched off).
+
+**Music:** a short piece when the game starts, a victory piece when you win a match and another one when you lose
+it (in free for all only the winner hears the victory). It plays over the match end scene and fades out when the next
+match begins; a draw has none. Its volume is under *Settings → Audio → Music* (console: `volume_music`).
 
 ## Log in
 
@@ -199,7 +204,7 @@ scroll.
 | `connect <address>`, `retry`, `disconnect`, `logout` | server connection |
 | `say <text>`, `team` | chat, switch team |
 | `equip <skin>` | wear a skin you own: `equip Dragon Lore`, `equip AK-47 \| Red Stripe`, `equip awp default` |
-| `sensitivity`, `fov`, `volume` (and `volume_weapons`, `volume_effects`, `volume_footsteps`, `volume_weather`, `volume_interface`), `vsync`, `fullscreen`, `net_graph`, `show_fps`, `show_ping`, `killcam`, `hitboxes` | settings (no value: show the current one) |
+| `sensitivity`, `fov`, `volume` (and `volume_weapons`, `volume_effects`, `volume_footsteps`, `volume_weather`, `volume_interface`, `volume_music`), `vsync`, `fullscreen`, `net_graph`, `show_fps`, `show_ping`, `killcam`, `hitboxes` | settings (no value: show the current one) |
 | `players`, `rooms`, `top` | from the server: who is online, the rooms, the best players |
 | `clear`, `quit` | clear the console, close the game |
 
