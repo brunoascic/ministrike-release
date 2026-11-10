@@ -222,6 +222,9 @@ Everything else is sent to the server, which runs it if your role allows it: see
   show can't lock you out).
 - **VSync**, **Max FPS** (without VSync; *Unlimited* possible) and **Menu and HUD size** (automatic: bigger from
   1080p up, so menus keep their size in 1440p and 4K).
+- **Quality:** **3D resolution** (100, 85, 75, 67 or 50 % of the window; menus and HUD stay sharp), **smooth edges**
+  (FXAA), **ambient occlusion** and **bloom**. All on at 100 % by default; on a slow graphics card lower the 3D
+  resolution first.
 
 The game draws in the screen's real pixels, also with Windows display scaling (it is DPI aware), and on Windows 10
 and 11 it shows its frames directly in fullscreen (flip model, without VSync also with tearing instead of waiting).
