@@ -13,17 +13,19 @@ and play: duels, team rounds or deathmatch, with CS2-style movement, spray patte
   (among them bomb defusal and gun game), 17 modifiers,
   10 character skins and 18 weapon skins you win from cases.
 
-The game runs on Windows (Direct3D 11). The server runs on Linux or Windows. The only external code is
-[cgltf](https://github.com/jkuhlmann/cgltf) (MIT) to read the weapon models and
-[Monocypher](https://monocypher.org) (CC0 / BSD-2) to encrypt the network traffic. The weapons are textured 3D models
-(glTF) with their skins, the players are built from boxes, and the map textures are generated when the game
-starts. The sounds are real recordings of guns, footsteps and weather from freesound.org and soundbible.com
-([credits](#credits)), built into the exe.
+The game runs on Windows (Direct3D 11). The server runs on Linux or Windows. The only external code in the game is
+[cgltf](https://github.com/jkuhlmann/cgltf) (MIT) to read the 3D models and
+[Monocypher](https://monocypher.org) (CC0 / BSD-2) to encrypt the network traffic. The maps, the weapons with
+their skins and the players are textured 3D models (glTF) made for the game: the players are soldiers in
+tactical gear who walk, crouch, aim, reload and fall on a skeleton, with the weapon held on its grips. The sounds
+are real recordings of guns, footsteps and weather from freesound.org and soundbible.com ([credits](#credits)),
+built into the exe.
 
 | | |
 |---|---|
-| ![Login](docs/screenshots/login.png) | ![Main menu](docs/screenshots/menu.png) |
-| ![Lobby](docs/screenshots/lobby.png) | ![Team deathmatch on Canals](docs/screenshots/canals.png) |
+| ![Login](docs/screenshots/login.jpg) | ![Main menu](docs/screenshots/menu.jpg) |
+| ![The rooms of a server](docs/screenshots/lobby.jpg) | ![Team deathmatch on Aim Redline](docs/screenshots/tdm.jpg) |
+| ![The outfits](docs/screenshots/characters.jpg) | ![Dustyard](docs/screenshots/gfx_dust.jpg) |
 
 ## Contents
 
@@ -99,6 +101,8 @@ game fetches a ticket from the official server for it), you never type your pass
 - Your settings (mouse, crosshair, HUD, loadout, volumes) are saved with the account and follow you to every PC;
   the video settings stay on each PC. Whatever was changed last wins (also changes made offline).
 
+![The server list](docs/screenshots/servers.jpg)
+
 **Everything between the game and the server is encrypted**, and the game makes sure it talks to the real server:
 it remembers each server's key the first time (in `ministrike_known_servers.txt` next to the game; not for LAN
 games). If a server
@@ -156,7 +160,7 @@ menu (**-** / **+** and the difficulty) or with chat commands:
 
 For playing with people next to you (home, office, LAN party). No server and no account are needed.
 
-![LAN game screen](docs/screenshots/lan.png)
+![LAN game screen](docs/screenshots/lan.jpg)
 
 1. Everyone clicks **LAN game** in the main menu.
 2. One player clicks **Host game**, sets up the room and clicks **Start game**.
@@ -373,7 +377,7 @@ the helmet) and the Desert Eagle still one-tap, and the AWP goes straight throug
 (above); in all other modes it is free and you choose vest, vest + helmet (the default) or nothing in the loadout (B).
 The HUD shows what's left next to your health.
 
-![Competitive: the buy menu](docs/screenshots/buy_menu.png)
+![Competitive: the buy menu](docs/screenshots/buy_menu.jpg)
 
 - **Bomb defusal:** Competitive with a bomb, like CS. Team Orange attacks: one of them gets the bomb at the start
   of the round and plants it on **site A or B** (red circles on the floor, letters on the screen) by holding **E**
@@ -402,7 +406,7 @@ on the loser's back with the gun raised. A random taunt is stamped on the screen
 it, or switch it off in the settings (*Match end animation*). It runs on each client only and changes nothing in the
 game.
 
-![Match end scene](docs/screenshots/round_end.png)
+![Match end scene: a foot on the loser's back](docs/screenshots/round_end.jpg)
 
 **Killcam:** when another player kills you, the last seconds are replayed through the killer's eyes, with their
 weapon in hand, their scope when they aimed through one, and the moment of the kill in slow motion. The bottom bar
@@ -410,12 +414,23 @@ shows who got you, with what, whether it was a headshot and how much health the 
 round of Elimination (you stay dead) and short where you respawn soon. Press Space to skip it, or switch it off in the
 settings (*Killcam*). The client records what it showed anyway, so the killcam costs no bandwidth.
 
-**Dying:** a killed player's knees give way, the upper body sags and the weapon slips out of the hands onto the floor,
-then the body tips over away from the shot (with a little twist, never twice the same) and settles on the floor with
-the arms flopped out. Each game draws it itself from where the killer stood (the server
-only says who died), so it costs no bandwidth and also plays in the killcam.
+**Dying:** a killed player's knees give way, the upper body sags and the weapon slips out of the hands, then the
+body turns and falls away from the shot: onto its back when it was hit from the front or the side, onto its front
+when it was hit from behind, and settles with arms and legs on the floor (never twice the same). Each game draws it
+itself from where the killer stood (the server only says who died), so it costs no bandwidth and also plays in the
+killcam.
 
 ![Killcam](docs/screenshots/killcam.jpg)
+
+**The other players:** you see what they do. They hold a rifle with the stock in the shoulder and the left hand
+under the handguard, a pistol with both hands, and look along the weapon up and down. Their steps are as long as
+the way they go, so the feet don't slide: short steps when walking, long ones when running, and the hips turn to
+where they run while the weapon stays on target. They crouch, pull the legs up in a jump and give in the knees when
+landing; the weapon kicks with every shot, they flinch when hit, lower the weapon while taking it out, change the
+magazine when they reload (the shotgun shell by shell), slash and stab with the knife and throw grenades over
+the shoulder. The head stays where its hitbox is in all of it.
+
+![Running, crouching and jumping, a fall onto the back](docs/screenshots/animations.jpg)
 
 **FPS and ping:** a small readout in the top left corner, each can be switched off in the settings (*Show FPS*,
 *Show ping*). The net graph (F8) shows both along with more network details.
@@ -456,20 +471,26 @@ Random weapons (the same random loadout for everybody each round) · Friendly fi
 - A skin you already own gives coins back (25 to 1500, depending on rarity).
 - Double-click a skin or press **Equip** to wear it; weapon skins are equipped per weapon (one skin for your AK,
   another for your AWP), the weapon filter also lists the default finish to go back to. Everyone in your room
-  sees your character skin and the skin of the weapon in your hand; a team-colored band on the chest, arm and
-  helmet still shows your team. The console command `equip <skin>` does the same (`equip AK-47 | Red Stripe`).
+  sees your character skin and the skin of the weapon in your hand; team-colored patches on the chest, the back and
+  the arms and a band on the helmet still show your team. In first person your sleeves are those of your skin. The console command `equip <skin>` does the same (`equip AK-47 | Red Stripe`).
 - The server opens the cases and decides which skin others see, so skins and coins can't be cheated.
 - Press **F** in the game to inspect your weapon: it is lifted and turned (the knife is turned over in the hand) and
   the skin's name shows in its rarity color. Firing, aiming, reloading or switching weapons stops it.
 
+![The outfits: Standard (orange and blue team), Woodland, Desert Storm, Arctic, Urban Grid; Toxic, Crimson Web, Neon Rider, Ocean Fade, Dragon Lore, Golden Legend](docs/screenshots/characters.jpg)
+
 | | |
 |---|---|
-| ![Skins](docs/screenshots/skins.png) | ![Case reel](docs/screenshots/case_reel.png) |
-| ![Case reveal](docs/screenshots/case_reveal.png) | ![Profile](docs/screenshots/profile.png) |
+| ![Skins](docs/screenshots/skins.jpg) | ![Case reel](docs/screenshots/case_reel.jpg) |
+| ![Case reveal](docs/screenshots/case_reveal.jpg) | ![Profile](docs/screenshots/profile.jpg) |
 | ![Weapon skins](docs/screenshots/weapon_skins.jpg) | ![Weapon case reveal](docs/screenshots/weapon_reveal.jpg) |
 | ![Weapon case reel](docs/screenshots/weapon_reel.jpg) | ![AK-47 Neon Serpent in the game](docs/screenshots/weapon_ingame.jpg) |
 
-![First person: gloved hands, a knife slash, inspecting the knife and the AK-47](docs/screenshots/viewmodel.jpg)
+**In your hands:** the weapon follows the view a moment late when you turn, lifts in a jump and dips when you
+land. Taking it out swings it up from below. Reloading turns the magazine towards your left hand, which takes it
+out, fetches a new one from below and pushes it in (shell by shell with the shotgun).
+
+![First person: the AK-47 Neon Serpent, changing the magazine, a knife slash, inspecting the weapon](docs/screenshots/viewmodel.jpg)
 
 ---
 
@@ -711,7 +732,8 @@ different skins).
 # Limitations
 
 - No anti-cheat beyond the server being in charge and the input rate limit.
-- Coins, skins and stats are kept per server.
+- Stats are kept per server, and so is what you win on a community server (your official skins and coins come
+  along, see [Accounts](#accounts)).
 - Collision uses boxes only (stairs but no ramps); bullets don't go through walls.
 - The game needs Windows with Direct3D 11; the server and bot run on Windows and Linux.
 - The Windows programs are not code-signed, so antivirus software may warn about them (see
